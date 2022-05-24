@@ -48,9 +48,9 @@
     Найдите на странице все параграфы с классом border и добавьте для них сплошную красную рамку толщиной в 1px
     */
 
-    let paragraph = document.querySelectorAll(".border1");  
-    console.log(paragraph); 
-        paragraph[0].style.border = "1px solid red"; 
+    document.querySelectorAll(".border1").forEach((e) => {
+        e.style.border = "1px solid red";
+    });
 
 </script>
 
