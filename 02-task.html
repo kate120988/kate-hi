@@ -15,14 +15,9 @@
 
 <body>
     Рабочие дни
-    <div>
-        <p>  </p>
-    </div>
-
+        <span id = "output"></span>;
     Выходные дни
-    <div>
-        <p> </p>
-    </div>
+    <span id = "output"></span>;
 
     <script>
        /*
@@ -47,10 +42,11 @@
         let i = [0].allDays;
         for (i = 0; i < allDays.length; i++) {
              if ( i == [0].freeDays, i == [1].freeDays) {
-             console.log ("freeDays", i);
+             output.innerHtml = '<b>"freeDays", ${i}</b>';
              }
-        else console.log ("workDays", i);
+        else output.innerHtml = '<b>"workDays", ${i}</b>';
         }
+
 
     </script>
 </body>
