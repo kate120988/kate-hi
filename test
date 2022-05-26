@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<style>
+    .border1 {
+        color: green;
+    }
+</style>
+<body>
+</body>
+
+<script>
+    function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm('А родители разрешили?');
+  }
+}
+
+let age = prompt('Сколько вам лет?', 18);
+
+if ( checkAge(age) ) {
+  alert( 'Доступ получен' );
+} else {
+  alert( 'Доступ закрыт' );
+}
+</script>
+
+</html>
+
